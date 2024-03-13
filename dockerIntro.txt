@@ -1,0 +1,43 @@
+
+
+1. Docker is a platform facilitating the creation, deployment, and execution of applications through containers.
+
+2. Containers package applications along with their dependencies into standardized units for seamless software development.
+
+3. Docker enables developers to build, deploy, and manage applications consistently across various environments, like development, 
+testing, and production.
+
+4. Applications can be run on any platform supporting Docker containers, be it a laptop, data center, or cloud infrastructure.
+
+5. Docker leverages containerization technology to offer lightweight, portable, and self-contained environments for applications.
+
+6. Components of Docker include Docker Engine for container management, Docker Hub for sharing container images, 
+and Docker Compose for orchestrating multi-container applications.
+
+7. Docker streamlines the development and deployment process by ensuring a consistent environment, reducing dependency conflicts,
+and enhancing scalability and resource utilization.
+
+8.Each application is run in an isolated enviroment (Containers)
+
+
+<--------------------------------------------- Containers Vs Virtual Machines -------------------------------------------------->
+
+                        Container                           |                               Virtual Machines
+                                                            |
+1) An isolated enviroment for running an application        |   An abstraction of a Machine(Physical Hardware). Therefore, We can
+                                                            |   run several Virtual Machines on a single real Physical Machine.
+                                                            |
+2)  lightweight, portable, and self-contained environments. |   Uses Hypervisors. Each VM needs a full blown OS
+    Uses OS of the host.                                    |
+                                                            |   
+3) Comparatively Faster then VM                             |   Slow to start
+                                                            |
+4) Needs Less Hardware resources as it uses the host's OS   |   Resource intensive as each VM needs/takes a slice of actual
+                                                            |    physical hardware resources
+                                                            |
+5) Provides OS-level process isolation                      |   Provide Hardware level process isolation and are slow to boot
+
+<--------------------------------------------- Docker Architecture ------------------------------------------------------------->
+
+Note: *Docker uses a Client-Server Architecture
+      *Docker is a PAAS(Platform as a Service)
